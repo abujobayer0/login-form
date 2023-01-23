@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #7de5ed, #ff7d7d);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 300px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.18);
+  z-index: -1;
+  inset: 0;
+  transform: rotate(-14deg);
+  border-radius: 10px;
+}
+
+/* .container img {
+  width: 90px;
+  margin-bottom: 40px;
+  position: relative;
+  left: 32%;
+  top: 8%;
+} */
+
+.container .text {
+  text-align: center;
+  color: rgb(81, 86, 90);
+}
+
+.text h3 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 7px;
+  font-family: 'Freehand', cursive;
+  color: gray;
+  position: relative;
+  /* clip-path: polygon(0 48%, 100% 48%, 94% 66%, 100% 79%, 0 80%, 6% 65%); */
+}
+.text h3::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  position: absolute;
+  background-image: linear-gradient(to right, #7e7a8a, #d6d48c);
+  bottom: 15%;
+  left: 35%;
+}
+.input-icons i {
+  position: absolute;
+}
+
+form {
+  position: relative;
+  left: 15%;
+  top: 5%;
+}
+
+.input-icons {
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  color: #333;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+}
+::placeholder {
+  color: gray;
+  font-size: 14px;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+span i {
+  position: absolute;
+  left: 53%;
+  top: 27%;
+}
+
+
+.checkbox {
+  padding: 10px 0px;
+  display: flex;
+}
+
+.checkbox label {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 8px;
+  color: #333;
+}
+
+.checkbox input {
+  width: 10px;
+}
+
+.hbtn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  z-index: 0;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500; 
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.hbtn i {
+  padding-right: 8px;
+}
+
+.hb-fill-middle2::before {
+  position: absolute;
+  content: "";
+  background: rgb(255, 183, 183);
+  transition-duration: 0.5s;
+  z-index: -1;
+  inset: 0px 0px auto auto;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2:hover::before {
+  width: 20%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2 {
+  background: transparent;
+  color: #000;
+  transition: color 0.5s ease 0s, background 0s ease 0s;
+}
+
+.hb-fill-middle2:hover {
+  color: rgb(47, 51, 77);
+  background: rgb(255, 255, 255);
+  font-weight: 900;animation:  shake 1s  ;
+  transition: color 0.8s ease 0s, background 0s ease 0.8s;
+}
+
+.hb-fill-middle2::after {
+  position: absolute;
+  content: "";
+  background: rgb(255, 183, 183);
+  transition-duration: 0.5s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2:hover::after {
+  width: 60%;
+}
+
+.checkbox a {
+  cursor: pointer;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-weight: 500;
+  font-size: 12px;
+  position: relative;
+  left: 20px;
+  color: #333;
+  transition: 0.5s;
+}
+
+.checkbox a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: gray;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.footer a {
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.footer a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* responsive part starts from here */
+
+@media (max-width: 420px) {
+  .container {
+    height: 425px;
+    width: 280px;
+  }
+
+  form {
+    padding: 2px;
+    position: relative;
+    left: 15%;
+    top: 5%;
+  }
+
+  .container img {
+    width: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 35%;
+    top: 5%;
+  }
+
+  span i {
+    position: absolute;
+    left: 58%;
+    top: 27%;
+  }
+  
+}
+
+@media (max-width: 280px) {
+  .container {
+    height: 420px;
+    width: 265px;
+    overflow: hidden;
+  }
+
+  .container::after {
+    content: "";
+    transform: rotate(-15deg);
+  }
+
+  form {
+    padding: 2px;
+    position: relative;
+    left: 10%;
+    top: 5%;
+  }
+
+  .container img {
+    width: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    left: 34%;
+    top: 5%;
+  }
+
+  span i {
+    position: absolute;
+    left: 60%;
+    top: 27%;
+  }
+}
+
+
+/* the end */

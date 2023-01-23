@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img src="logo.png" alt="image not found" /> -->
+
+      <div class="text">
+        <h3>Log In</h3>
+      </div>
+
+      <form id="form" action="#">
+        <div class="input-icons">
+          <i class="fa-regular fa-envelope icon"></i>
+          <input
+            class="input-field"
+            type="mail"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+
+        <div class="input-icons">
+          <i class="fa fa-key icon"></i>
+          <input
+            class="input-field"
+            type="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <span><i id="eye" class="fa fa-eye" onclick = "toggle()"></i></span>
+        </div>
+
+        <div class="checkbox">
+          <input type="radio" required />
+          <label for="radio">Remember me</label>
+          <a href="#">forget password?</a>
+        </div>
+
+
+        <div class="forget-pass">
+          <button id="btn" onmouseover="mouseHover()" class="hbtn hb-fill-middle2">
+            Log <span id="in">in</span>
+          </button>
+          
+        </div>
+
+        <div class="footer">
+          <p>Don't have an <a href="#">account?</a></p>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- log in page ends here -->
+
+
+   <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f32a350683.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

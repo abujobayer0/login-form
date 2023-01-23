@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(180, 180, 180);
+}
+.forget-pass {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50vh;
+}
+.hbtn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  z-index: 0;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+.hbtn i {
+  padding-right: 8px;
+}
+
+.hb-fill-middle2::before {
+  position: absolute;
+  content: "";
+  background: rgb(255, 183, 183);
+  transition-duration: 0.5s;
+  z-index: -1;
+  inset: 0px 0px auto auto;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2:hover::before {
+  width: 20%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2 {
+  background: white;
+  font-weight: 900;
+  color: #000;
+  transition: color 0.5s ease 0s, background 0s ease 0s;
+}
+
+.hb-fill-middle2:hover {
+  color: rgb(47, 51, 77);
+  background: rgb(255, 255, 255);
+  font-weight: 900;
+  animation: shake 0.8s;
+  transition: color 0.8s ease 0s, background 0s ease 0.8s;
+}
+
+.hb-fill-middle2::after {
+  position: absolute;
+  content: "";
+  background: rgb(255, 183, 183);
+  transition-duration: 0.5s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2:hover::after {
+  width: 60%;
+}
